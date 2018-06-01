@@ -1,0 +1,8 @@
+word = input("In: ")
+consonants = list("bcdfghjklmnpqrstvxzy")
+vowels = list("aeiou")
+count = 0
+for x in word:
+  if not x in vowels:
+    count += 1
+print(count)
