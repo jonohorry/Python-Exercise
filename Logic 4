@@ -1,0 +1,25 @@
+# Don't delete any of the given code.
+def maxBlock(string):
+  temp_count = 1
+  max_count = 0
+  # insert your logic here
+  for x in range(len(string)-1):
+    if string[x] == string[x+1]:
+      temp_count += 1
+    else:
+      temp_count = 1
+    if temp_count > max_count:
+      max_count = temp_count
+  return max_count
+# Test cases. Don't modify  
+print(1,maxBlock("hoopla"))	         # this would be 2
+print(2,maxBlock("abbCCCddBBBxx"))	 # this would be 3
+print(3,maxBlock(""))	               # this would be 0
+print(4,maxBlock("xyz"))	
+print(5,maxBlock("xxyz"))	
+print(6,maxBlock("xyzz"))	
+print(7,maxBlock("abbbcbbbxbbbx"))	
+print(8,maxBlock("XXBBBbbxx"))	
+print(9,maxBlock("XXBBBBbbxx"))	
+print(10,maxBlock("XXBBBbbxxXXXX"))
+print(11,maxBlock("XX2222BBBbbXX2222"))
