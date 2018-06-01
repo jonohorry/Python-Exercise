@@ -1,0 +1,7 @@
+commands = int(input())
+for x in range(commands):
+  com = input()
+  if com [0:10] == "simon says":
+    print(com[11:])
+  else:
+    print(" ")
