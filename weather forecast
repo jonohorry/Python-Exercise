@@ -1,0 +1,14 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://weather.com/weather/5day/l/USOK0537:1:US'
+r = requests.get(url)
+r_html = r.text
+
+soup = BeautifulSoup(r_html, "lxml")
+
+#this will fetch all of the links on the webpage
+for story in soup.find_all('td'):
+    print(story.text.replace("\n", " ").strip())
+for story in soup.find_all('tr'):
+    print(story.text.replace("\n", " ").strip())
