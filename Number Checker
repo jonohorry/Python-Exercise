@@ -1,0 +1,10 @@
+# Read 2 integers:
+first = int(input())
+second = int(input())
+
+# Check to see which one is bigger
+print("The bigger number is",max(first, second))
+
+
+
+# print the bigger integer
