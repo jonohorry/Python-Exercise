@@ -1,0 +1,19 @@
+#This program will take an input and give you the coded version.
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+key = 3
+character = input('Please enter a character: ')
+
+position = alphabet.find(character)
+newPosition = position + key
+newPosition = (position + key) % 26
+newCharacter = alphabet[newPosition]
+
+
+
+newMessage = ''
+message = input('Please enter a message: ')
+for character in message:
+  newMessage += newCharacter
+
+print('Your new message is: ', newMessage)
