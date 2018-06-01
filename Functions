@@ -1,0 +1,70 @@
+# import anything necessary here.
+
+# A1 - combining inputs
+
+def sum_three():
+  a = int(input())
+  b = int(input())
+  c = int(input())
+  return (a+b+c)
+  
+sum_three()
+
+#A2 - Area of a Triangle
+def area_of_triangle():
+  b = int(input())
+  h = int(input())
+  print(1/2 * b * h)
+area_of_triangle()
+
+#A3 - Combining Strings
+
+def combining_strings():
+  a = input()
+  # Print a string:
+  print("Hello,", a+"!")
+combining_strings()
+
+#A4 - Find the larger of 2 numbers
+
+def larger():
+  first = int(input())
+  second = int(input())
+  print("The bigger number is",max(first, second))
+larger()
+
+
+#A5 - Printing Arrays
+
+def arrays():
+  food_items = ["turkey","ham", "spam","eggs","nuts"]
+  print(food_items[3])
+  print("This will print the array of food items")
+  for x in food_items:
+    print(x)
+arrays()
+
+#A6 - Else if statements
+
+def elseif():
+  grade = int(input("Enter your grade: "))
+  if grade >= 90 and grade <= 100:
+     print("A")
+  elif grade >= 80 and grade<= 89:
+    print("B")
+  elif grade >= 70 and grade<= 79:
+    print("C")
+  elif grade >= 60 and grade<= 69:
+    print("D")
+  else:
+    print("F")
+elseif()
+
+#A7 - Partial Arrays
+
+def partarray():
+  a1 = [1, 1, 2, 3, 4, 5, 8, 11, 13, 17, 19, 20, 21, 34, 43, 55, 89]
+  for x in a1:
+    if x <= 29:
+      print(x)
+partarray()
