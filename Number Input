@@ -1,0 +1,6 @@
+# Use the code from last exercise here.
+
+
+# Ask user to enter a number to find in the array
+print("Enter a number:")
+elem2 = int(input("Which number do you want to find?"))
