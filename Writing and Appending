@@ -1,0 +1,8 @@
+my_file = open("timestables.txt", "w")
+
+for y in range (1,13):
+  my_file.write(str(y)+" timestable\n")
+  for x in range (1,13):
+      my_file.write(str(x)+" * " + str(y) +  "=" +str(2*x) + "\n")
+    
+my_file.close()
